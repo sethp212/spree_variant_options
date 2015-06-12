@@ -1,7 +1,3 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "spree_variant_options/version"
-
 Gem::Specification.new do |s|
   s.name        = "spree_variant_options"
   s.version     = SpreeVariantOptions::VERSION
@@ -20,18 +16,12 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # Runtime
-  s.add_dependency('spree_core', '~> 3.0.2.beta')
+  s.add_dependency 'spree_core',        '~> 3.0.2.beta'
 
-  # Development
-  s.add_development_dependency('spree_sample',     '~> 1.2.0')
-  s.add_development_dependency('dummier',          '~> 0.3')
-  s.add_development_dependency('shoulda',          '~> 3.0')
-  s.add_development_dependency('factory_girl',     '~> 2.3')
-  s.add_development_dependency('cucumber-rails',   '~> 1.2')
-  s.add_development_dependency('sqlite3',          '~> 1.3')
-  s.add_development_dependency('capybara')
-  s.add_development_dependency('launchy')
-
-  # s.add_development_dependency('debugger')
+  s.add_development_dependency 'capybara', '~> 2.0'
+  s.add_development_dependency 'database_cleaner', '~> 1.0.1'
+  s.add_development_dependency 'factory_girl', '~> 4.2'
+  s.add_development_dependency 'shoulda-matchers', '>= 1.5.4'
+  s.add_development_dependency 'sqlite3'
 
 end
