@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "spree_variant_options"
-  s.version     = SpreeVariantOptions::VERSION
+  s.version     = "3.0.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Spencer Steffen"]
   s.email       = ["spencer@citrusme.com"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # Runtime
-  s.add_dependency 'spree_core',        '~> 3.0.2.beta'
+  s.add_dependency 'spree_core', '~> 3.0.1'
 
   s.add_development_dependency 'capybara', '~> 2.0'
   s.add_development_dependency 'database_cleaner', '~> 1.0.1'
